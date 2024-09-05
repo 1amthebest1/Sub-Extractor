@@ -1,0 +1,12 @@
+How it works:
+Argument Parsing: The script checks if -p is provided as an option to include the protocol. The domain and files are processed accordingly.
+Protocol Option: If -p is specified, the script includes both http:// and https:// in the results. Otherwise, it only includes the subdomains without the protocol.
+
+Usage:
+To include the protocol:
+
+./script.sh example.com -p file1.txt file2.txt
+
+To exclude the protocol:
+
+./script.sh example.com file1.txt file2.txt
